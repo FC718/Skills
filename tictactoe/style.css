@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* viewport units: vh(viewport height), vw, vmin (smallest between vh & vw) */
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    /* display flex makes all elemnts horizontal */
+    flex-direction: column;
+  /*   makes elements expand in size in the column fashion*/
+    justify-content: center;
+  /*   flex direction and justify-content is on the main axis; */
+    align-items: center;
+  /*   align-items: is on the cross axis; */
+  background-color: black;
+  }
+  
+  header {
+    font-size: 5vmin;
+    color: #8ef6e4;
+    letter-spacing: 2vmin;
+  }
+  
+  h1 {
+    color: #9896f1;
+    font-size: 3vmin;
+  }
+  
+  #triangles {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin-top: 2vmin;
+  }
+  
+  #triangles > div {
+    height: 10vmin;
+    border-width: 5vmin;
+    border-style: solid;
+    border-color: #edb1f1 transparent transparent;
+    transform: scale(0.7);
+  }
+  
+  #triangles > div:hover {
+    transform: scale(0.9);
+    transition: transform 150ms ease-in;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+  /*   this specifies column height */
+    grid-template-rows: repeat(6, 10vmin);
+  /*   This specifies row width */
+    gap: 1vmin;
+    margin-top: -2vmin;
+    cursor: pointer;
+  }
+  
+  #board > div {
+    /* border-radius: 50%; */
+    border: 0.5vmin solid yellowgreen;
+}
+  
+  button {
+    margin-top: -30vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border-radius: 4vmin;
+    border: 0.1vmin solid purple;
+    color: purple;
+  }
+
+    
+    button:hover {
+      color: white;
+      background-color: purple;
+    }

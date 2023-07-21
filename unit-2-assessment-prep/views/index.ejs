@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prep</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Groceries List</h1>
+    <section>
+    <% if (groceries.length) { %>
+      <% groceries.forEach(function(grocery) { %>
+        <article>
+          <%= grocery.grocery %>
+        <ul>
+          <li>
+            <%= grocery.need ? "Still Need" : "Not Needed" %>
+          </li>
+        </ul>
+        </article>
+      <% }) %>
+    </section>
+      <% } else { %>
+    <h3>There are no groceries yet!</h3>
+    <% } %>
+    <hr>
+    <form id="add-grocery" action="/groceries" method="POST">
+      <input type="text" name="grocery" required>
+      <button>ADD grocery</button>
+    </form>
+  </body>
+</html>

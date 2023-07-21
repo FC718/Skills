@@ -1,0 +1,29 @@
+{
+    "portfolio": [
+        {
+            "cover": "/portfolio/ecommerce.png",
+            "title": "Ecommerce ",
+            "description": "Ecommerce project built with HTML, CSS & Javascript",
+            "url": "https://fc718.github.io/Ecommerce/"
+        },
+
+        {
+            "cover": "/portfolio/memory.png",
+            "title": "Hiphop Memory!",
+            "description": "Hiphop Memory game! Built with HTML, CSS & Javascript",
+            "url": "https://fc718.github.io/HipHop-Memory-Game/"
+        },
+        {
+            "cover": "/portfolio/studiotime.png",
+            "title": "Studio Time!",
+            "description": "Built with HTML,CSS, Javascript, Node.js, MongoDB & Google Oauth",
+            "url": "https://studiotime.azurewebsites.net/"
+        },
+        {
+            "cover": "/portfolio/conan.jpg",
+            "title": "Album",
+            "description": "Quite Frankly!",
+            "url": "https://www.frankcasseus.com/"
+        }
+    ]
+}
